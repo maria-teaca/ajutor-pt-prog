@@ -283,10 +283,8 @@
                             const proiect = $('#inputProiect').val();
                             
                             if(materie && proiect) {
-                                // $('.error').hide();
                                 $('#plangere').append(`<li style="list-style-type:none; align"><p6><b>${proiect}<b></p6></li> <p7><b>(${materie})</b></p7></li>`);
                             } else {
-                                // $('.error').show();
                                 alert("Both fields are required!");
                             }
                         });
@@ -395,9 +393,9 @@
             <div class="row pb-3">
                 <div class="col-md-5"></div>
                 <div class="col-md-2 text-center">
-                    <img class="img-responsive left-block" src="img/instagram.svg" />
-                    <img class="img-responsive center-block" src="img/twitter.svg" />
-                    <img class="img-responsive right-block" src="img/facebook.svg" />
+                    <button style="background: url(img/instagram.svg); width: 26px; height: 26px; border: none;"></button>
+                    <button style="background: url(img/twitter.svg); width: 29px; height: 25px; border: none;"></button>
+                    <button style="background: url(img/facebook.svg); width: 24px; height: 24px; border: none;"></button>
                 </div>
                 <div class="col-md-5"></div>
             </div>
