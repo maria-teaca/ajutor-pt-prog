@@ -17,176 +17,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <style>
-    .btn-default {
-    background-color: rgb(38, 50, 56);
-    color:rgb(146, 227, 169);
-    border-color: rgb(38, 50, 56);
-    }
-
-    .btn-reverse {
-    background-color: rgb(146, 227, 169);
-    color:rgb(38, 50, 56);
-    border-color: rgb(146, 227, 169);
-    }
-
-    .btn-light {
-    background-color: rgb(255, 255, 255);
-    color:rgb(38, 50, 56);
-    border-color: rgb(255, 255, 255);
-    }
-    .btn-light:hover {
-    background-color: rgb(255, 255, 255);
-    color:rgb(38, 50, 56);
-    border-color: rgb(255, 255, 255);
-    }
-
-    h1 {
-    color: rgb(38,50,56,1);
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 121.1%;
-    }
-
-    h2 {
-    color: rgb(38,50,56,1);
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 121.1%;
-    }
-
-    h3 {
-    color: rgb(0, 0, 0);
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    }
-
-    p1 {
-        font-family: Merriweather;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-
-        /* color: #92E3A9; */
-    }
-
-    p2 {
-    color: rgb(0, 0, 0);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    }
-
-    p3 {
-    position: absolute;
-    left: 115px;
-    top: 0px;
-    color: rgb(0, 0, 0);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    }
-
-    p4 {
-    color: rgb(38,50,56,1);
-    font-family: 'Merriweather';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    }
-
-    p5 {
-    color: rgb(168,168,168,1);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    }
-
-    p6 {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
-
-        color: rgb(38, 50, 56);
-    }
-
-    p7 {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
-
-        color: rgb(146, 227, 169);
-    }
-
-    .bg-color {
-    background-color: rgb(146, 227, 169);
-    color: rgb(146, 227, 169);
-    border-color: rgb(146, 227, 169);
-    }
-
-    .bg-dark {
-    background-color: rgb(38,50,56,1);
-    color: rgb(38,50,56,1);
-    border-color: rgb(38,50,56,1);
-    }
-
-    .bg-dropdown {
-    background-color: rgb(253, 253, 253);
-    color: rgb(0, 0, 0);
-    border-color: rgb(58, 59, 59);
-    }
-
-    .under {
-    position: absolute;
-    left: 50px;
-    top: 0px;
-    }
-    .over {
-    position: absolute;
-    left: 66px;
-    top: 12px;
-    }
-
-    p10 {
-        font-family: Merriweather;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 121.1%;
-        /* or 18px */
-
-        text-align: center;
-    }
-
-    .rectblabla {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.2);
-    border-radius: 5px;
-    }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -195,28 +26,45 @@
             <div class="col-4">
                 <img src="img/ajutor-pt-prog-text.svg"/>
             </div>
+
             <div class="col-4"></div> 
             <div class="col-4 text-right">              
-                <button type="button" class="btn btn-default"><p1 style="color: #92E3A9;">Logare</p1></button>
-                <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Creare cont</p1></button>
-                <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Contact</p1></button>
-
-           </div> 
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: none;">
+                
+                    <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <!-- <span class="navbar-toggler-icon"></span> -->
+                      <img src="img/collapsed_menu.svg">
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-default"><p1 style="color: #92E3A9;">Logare</p1></button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Creare cont</p1></button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Contact</p1></button>
+                        </li>
+                    </div>
+                  </nav>
+           </div>
         </div> 
         <div class="row mt-5"> 
-            <div class="col-md-6 text-left">
+            <div class="col-md-6">
                 <br />
                 <br />
                 <br />
                 <br />
-                <h1><b>Cumpăratul de teme nu a fost niciodată mai simplu!</b></h1>
+                <h1>Cumpăratul de teme nu a fost niciodată mai simplu!</h1>
                 <br />
-                <p2>Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</p2>
-                <br />
-                <br />
+                <h4>Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</h4>
                 <br />
                 <br />
-                <button type="button" class="btn btn-default left-block mr-3" data-toggle="modal" data-target="#popup" data-whatever="getPopup"><p1 style="color: #92E3A9;">Vreau să cumpăr</p1></button>
+                <br />
+                <br />
+                <button type="button" class="btn btn-default left-block mr-3 mb-3" data-toggle="modal" data-target="#popup" data-whatever="getPopup"><p1 style="color: #92E3A9;">Vreau să cumpăr</p1></button>
 
                 <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popup" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -282,8 +130,8 @@
                             const materie = $('#subjects').val();
                             const proiect = $('#inputProiect').val();
                             
-                            if(materie && proiect) {
-                                $('#plangere').append(`<li style="list-style-type:none; align"><p6><b>${proiect}<b></p6></li> <p7><b>(${materie})</b></p7></li>`);
+                            if(materie && proiect && materie.localeCompare("Alege materia")) {
+                                $('#plangere').append(`<li style="list-style-type:none; align"><p6>${proiect}</p6></li> <p7>(${materie})</p7></li>`);
                             } else {
                                 alert("Both fields are required!");
                             }
@@ -291,19 +139,18 @@
                     });
                 </script>
 
-                <button type="button" class="btn btn-reverse right-block mr-3"><p1 style="color: #263238;"><b>Vreau să fac teme pentru alții</b></p1></button>
+                <button type="button" class="btn btn-reverse right-block mr-3 mb-3"><p1 style="color: #263238;">Vreau să fac teme pentru alții</p1></button>
             </div>
             <div class="col-md-6 text-center">
                 <img class="img-responsive center-block" style="max-width: 100%;" src="img/tipa_invatacioasa.svg"/>
             </div> 
-        </div> 
-        
+        </div>   
     </div>
 
     <div class="container-fluid">
         <div class="row bg-color mt-5 justify-content-center"> 
             <div class="col-md-12 mt-5 text-center">
-                <h1><b>Cum funcționează?</b></h1>
+                <h1>Cum funcționează?</h1>
             </div> 
         </div>
 
@@ -314,17 +161,17 @@
                     <div class="col-md-4 mb-5 pb-5">
                         <img class="under" src="img/rectang.svg"/>
                         <img class="over" src="img/one.svg"/>
-                        <p3>Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.</p3>
+                        <p3 class="mr-3">Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.</p3>
                     </div>
                     <div class="col-md-4 mb-5 pb-5">
                         <img class="under" src="img/rectang.svg"/>
                         <img class="over" src="img/two.svg"/>
-                        <p3>Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.</p3>
+                        <p3 class="mr-3">Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.</p3>
                     </div>
                     <div class="col-md-4 mb-5 pb-5">
                         <img class="under" src="img/rectang.svg"/>
                         <img class="over" src="img/three.svg"/>
-                        <p3>După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.</p3>
+                        <p3 class="mr-3">După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.</p3>
                     </div>
                 </div>
             </div>
@@ -336,14 +183,14 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <div class="rectblabla">
+                <div class="rectform">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-5 mt-4 ml-4 mr-4">
-                                <h2><b>Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</b></h2>
+                                <h2>Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</h2>
                                 <br />
                                 <br />
-                                <p2>Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.</p2>
+                                <h4>Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.</h4>
                             </div>
                             <div class="col-md-5 mt-3 mr-4 ml-4 mb-5">
                                 <form role="form">
@@ -402,7 +249,7 @@
             <div class="row pb-3">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 text-center">
-                    <p10>Copyright 2020 | Cine ne pârăște o mierlește.</p10>
+                    <p8>Copyright 2020 | Cine ne pârăște o mierlește.</p8>
                 </div>
                 <div class="col-md-4"></div>
             </div>

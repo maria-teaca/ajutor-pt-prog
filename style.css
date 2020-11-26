@@ -1,0 +1,215 @@
+    .btn-default {
+        background-color: rgb(38, 50, 56);
+        color: rgb(146, 227, 169);
+        border-color: rgb(38, 50, 56);
+    }
+    
+    .btn-reverse {
+        background-color: rgb(146, 227, 169);
+        color: rgb(38, 50, 56);
+        border-color: rgb(146, 227, 169);
+    }
+    
+    .btn-light {
+        background-color: rgb(255, 255, 255);
+        color: rgb(38, 50, 56);
+        border-color: rgb(255, 255, 255);
+    }
+    
+    .btn-light:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(38, 50, 56);
+        border-color: rgb(255, 255, 255);
+    }
+    
+    h1 { 
+        /* cumparatul de teme / cum funct */
+        color: rgb(38, 50, 56, 1);
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 121.1%;
+    }
+    
+    h2 {
+        /* ai tupeu? */
+        color: rgb(38, 50, 56, 1);
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 121.1%;
+    }
+    
+    h3 {
+        /* exprima-ti frustrarile / plangeri introd pana acum */
+        color: rgb(0, 0, 0);
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    p1 {
+        /* butoane */
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    h4 {
+        /* platf ideala / trimite un mail */
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+    }
+    
+    p3 {
+        /* paragrafe 1,2,3 */
+        position: absolute;
+        left: 115px;
+        top: 0px;
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    p4 {
+        /* label-uri formulare */
+        color: rgb(38, 50, 56, 1);
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    p5 {
+        /* laber-uri form pop-up */
+        color: rgb(168, 168, 168, 1);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    p6 {
+        /* lista plangeri - proiect */
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgb(38, 50, 56);
+    }
+    
+    p7 {
+        /* lista plangeri - materie */
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgb(146, 227, 169);
+    }
+
+    p8 {
+        /* footer */
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 121.1%;
+        text-align: center;
+    }
+    
+    .bg-color {
+        background-color: rgb(146, 227, 169);
+        color: rgb(146, 227, 169);
+        border-color: rgb(146, 227, 169);
+    }
+    
+    .bg-dark {
+        background-color: rgb(38, 50, 56, 1);
+        color: rgb(38, 50, 56, 1);
+        border-color: rgb(38, 50, 56, 1);
+    }
+    
+    .bg-dropdown {
+        background-color: rgb(253, 253, 253);
+        color: rgb(0, 0, 0);
+        border-color: rgb(58, 59, 59);
+    }
+    
+    .under {
+        position: absolute;
+        left: 50px;
+        top: 0px;
+    }
+    
+    .over {
+        position: absolute;
+        left: 66px;
+        top: 12px;
+    }
+    
+    .rectform {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.2);
+        border-radius: 5px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .btn {
+            width: 100%;
+            display:block;
+        }
+        
+        h1 {
+            /* cumparatul de teme */
+            color: rgb(38, 50, 56, 1);
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 121.1%;
+            text-align: center;
+        }
+
+        h2 {
+            /* ai tupeu? */
+            color: rgb(38, 50, 56, 1);
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 29px;
+            line-height: 121.1%;
+            text-align: center;
+        }
+
+        h4 {
+            /* platf ideala / trimite un mail */
+            color: rgb(0, 0, 0);
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
