@@ -2,21 +2,24 @@
 <html lang="en">
 
 <head>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Site</title>
 
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,7 +35,6 @@
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: none;">
                 
                     <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <!-- <span class="navbar-toggler-icon"></span> -->
                       <img src="img/collapsed_menu.svg">
                     </button>
                   
@@ -48,22 +50,16 @@
                             <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Contact</p1></button>
                         </li>
                     </div>
-                  </nav>
+                </nav>
            </div>
         </div> 
         <div class="row mt-5"> 
             <div class="col-md-6">
-                <br />
-                <br />
-                <br />
-                <br />
+                <br /><br /><br /><br />
                 <h1>Cumpăratul de teme nu a fost niciodată mai simplu!</h1>
                 <br />
                 <h4>Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au nevoie urgent de un înger care să le repare nota de intrare în examen.</h4>
-                <br />
-                <br />
-                <br />
-                <br />
+                <br /><br /><br /><br />
                 <button type="button" class="btn btn-default left-block mr-3 mb-3" data-toggle="modal" data-target="#popup" data-whatever="getPopup"><p1 style="color: #92E3A9;">Vreau să cumpăr</p1></button>
 
                 <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popup" aria-hidden="true">
@@ -116,29 +112,6 @@
                         </div>
                     </div>
                 </div>
-
-                <script>
-                    $(document).ready(function(){
-                        const subjects = ['USO', 'M1', 'M2', 'PC', 'PL'],
-                        select = document.getElementById('subjects');
-
-                        for( subject in subjects ) {
-                            select.add( new Option( subjects[subject] ) );
-                        };
-
-                        $('#incarca').click(function() {                            
-                            const materie = $('#subjects').val();
-                            const proiect = $('#inputProiect').val();
-                            
-                            if(materie && proiect && materie.localeCompare("Alege materia")) {
-                                $('#plangere').append(`<li style="list-style-type:none; align"><p6>${proiect}</p6></li> <p7>(${materie})</p7></li>`);
-                            } else {
-                                alert("Both fields are required!");
-                            }
-                        });
-                    });
-                </script>
-
                 <button type="button" class="btn btn-reverse right-block mr-3 mb-3"><p1 style="color: #263238;">Vreau să fac teme pentru alții</p1></button>
             </div>
             <div class="col-md-6 text-center">
@@ -188,8 +161,7 @@
                         <div class="row">
                             <div class="col-md-5 mt-4 ml-4 mr-4">
                                 <h2>Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</h2>
-                                <br />
-                                <br />
+                                <br /><br />
                                 <h4>Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.</h4>
                             </div>
                             <div class="col-md-5 mt-3 mr-4 ml-4 mb-5">
@@ -260,5 +232,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script>
+        $(document).ready(function(){
+            const subjects = ['USO', 'M1', 'M2', 'PC', 'PL'],
+            select = document.getElementById('subjects');
+
+            for( subject in subjects ) {
+                select.add( new Option( subjects[subject] ) );
+            };
+
+            $('#incarca').click(function() {                            
+                const materie = $('#subjects').val();
+                const proiect = $('#inputProiect').val();
+                
+                if(materie && proiect && materie.localeCompare("Alege materia")) {
+                    $('#plangere').append(`<li style="list-style-type:none; align"><p6>${proiect}</p6></li> <p7>(${materie})</p7></li>`);
+                } else {
+                    alert("Both fields are required!");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
