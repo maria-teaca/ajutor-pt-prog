@@ -31,24 +31,30 @@
             </div>
 
             <div class="col-4"></div> 
-            <div class="col-4 text-right">              
+            <div class="col-4 text-left">
+                <b class="screen-overlay"></b>
+
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: none;">
                 
-                    <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler dropdown-menu-left" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <img src="img/collapsed_menu.svg">
                     </button>
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-default"><p1 style="color: #92E3A9;">Logare</p1></button>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Creare cont</p1></button>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Contact</p1></button>
-                        </li>
+                        <ul class="navbar-nav mr-auto" style="position: relative; left: -20px; top: 10px">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-default" style="display: block; object-position: left;" href="#"><p1 style="color: #92E3A9;">Logare</p1></a>
+                                <!-- <button type="button" class="btn btn-default" style="display: block;"><p1 style="color: #92E3A9;">Logare</p1></button> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-light" style="display: block; object-position: left;" href="#"><p1 style="color: rgb(38, 50, 56, 0.8);">Creare cont</p1></a>
+                                <!-- <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Creare cont</p1></button> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-light" style="display: block; object-position: left;" href="#"><p1 style="color: rgb(38, 50, 56, 0.8);">Contact</p1></a>
+                                <!-- <button type="button" class="btn btn-light"><p1 style="color: rgb(38, 50, 56, 0.8);">Contact</p1></button> -->
+                            </li>
+                        </ul>
                     </div>
                 </nav>
            </div>
@@ -74,10 +80,9 @@
                             <div class="modal-body">
                                 <form>
                                     <div class="form-group">
-                                        <p5><select class="form-control" id="subjects">
-                                            <option selected>Alege materia</option>
+                                        <select class="form-control" id="subjects">
+                                            <option selected><p5>Alege materia</p5></option>
                                         </select>
-                                        </p5>
                                     </div>
                                     <div class="form-group">
                                         <p5><input type="titlu_proiect" class="form-control" id="inputProiect" placeholder="Titlul proiectului"></p5>
